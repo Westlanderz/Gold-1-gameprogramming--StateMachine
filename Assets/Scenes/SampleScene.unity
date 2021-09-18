@@ -524,10 +524,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 1342633366}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43747764d9674028dbf0a4a6c02009f7, type: 3}
+  m_Script: {fileID: 11500000, guid: 0b5d8bf55ed985a749ce07d3ed2d9ac4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentState: 0
-  moveSpeed: 2
-  rotationSpeed: 2
-  jumpHeight: 5
