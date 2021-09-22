@@ -1,4 +1,4 @@
 public interface IStates {
     void Action();
-    CubeState GetState();
+    void UpdateUI();
 }
