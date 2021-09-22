@@ -23,31 +23,11 @@ public class Cube : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         cube = GetComponent<GameObject>();
+        state.UpdateUI();
     }
 
     void FixedUpdate()
     {
         state.Action();
-    }
-
-    void Update() {
-        UpdateUI();
-    }
-
-    void UpdateUI() {
-        switch(state.GetState()) {
-            case CubeState.Idle:
-                GetComponent<Renderer>().material.color = Color.white;
-                break;
-            case CubeState.Moving:
-                GetComponent<Renderer>().material.color = Color.green;
-                break;
-            case CubeState.Rotating:
-                GetComponent<Renderer>().material.color = Color.black;
-                break;
-            case CubeState.Jumping:
-                GetComponent<Renderer>().material.color = Color.blue;
-                break;
-        }
     }
 }
